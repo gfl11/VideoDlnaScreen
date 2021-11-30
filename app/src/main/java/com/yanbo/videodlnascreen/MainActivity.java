@@ -1,10 +1,11 @@
 package com.yanbo.videodlnascreen;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.yanbo.lib_screen.entity.RemoteItem;
 import com.yanbo.lib_screen.manager.ClingManager;

@@ -1,6 +1,6 @@
 package com.yanbo.lib_screen.manager;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.yanbo.lib_screen.entity.ClingDevice;
 import com.yanbo.lib_screen.event.DeviceEvent;

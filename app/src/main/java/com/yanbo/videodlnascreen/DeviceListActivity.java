@@ -3,14 +3,16 @@ package com.yanbo.videodlnascreen;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.yanbo.lib_screen.entity.ClingDevice;
 import com.yanbo.lib_screen.event.DeviceEvent;
 import com.yanbo.lib_screen.listener.ItemClickListener;
+import com.yanbo.lib_screen.manager.ClingManager;
 import com.yanbo.lib_screen.manager.DeviceManager;
 
 import org.greenrobot.eventbus.EventBus;
@@ -75,5 +77,6 @@ public class DeviceListActivity extends AppCompatActivity {
     public void onStop() {
         super.onStop();
         EventBus.getDefault().unregister(this);
+        DeviceManager.getInstance().destroy();
     }
 }
